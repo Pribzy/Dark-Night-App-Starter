@@ -27,7 +27,6 @@ class InfoViewController: UIViewController {
         super.viewDidLoad()
         customizeViews()
         // TODO: Show VC always in Dark Mode
-        //overrideUserInterfaceStyle = .dark
     }
 
     func setup(with title: String) {
@@ -47,5 +46,24 @@ class InfoViewController: UIViewController {
             titleLabel.topAnchor.constraint(equalTo: backgroundView.contentView.topAnchor, constant: 32),
             titleLabel.centerXAnchor.constraint(equalTo: backgroundView.contentView.centerXAnchor)
         ])
+
+//        view.translatesAutoresizingMaskIntoConstraints = false
+//               view.addSubview(backgroundView)
+//               backgroundView.contentView.addSubview(vibrantView)
+//               vibrantView.contentView.addSubview(titleLabel)
+//               NSLayoutConstraint.activate([
+//                   backgroundView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+//                   backgroundView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+//                   backgroundView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+//                   backgroundView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+//
+//                   vibrantView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+//                   vibrantView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+//                   vibrantView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+//                   vibrantView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+//
+//                   titleLabel.topAnchor.constraint(equalTo: vibrantView.contentView.topAnchor, constant: 32),
+//                   titleLabel.centerXAnchor.constraint(equalTo: vibrantView.contentView.centerXAnchor)
+//               ])
     }
 }
