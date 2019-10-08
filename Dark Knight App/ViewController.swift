@@ -101,10 +101,10 @@ class ViewController: UIViewController {
     }
 
     private func setupColors() {
-        // TODO: Make line color dynamic
-        separatorLine.backgroundColor = .black
         // TODO: Make title color dynamic
         titleLabel.textColor = .black
+        // TODO: Make line color dynamic
+        separatorLine.backgroundColor = .black
         batImageView.tintColor = UIColor(named: LocalConstants.batColor)
         // TODO: Make containers color dynamic
         setupContainersColors(with: .gray)
@@ -115,10 +115,6 @@ class ViewController: UIViewController {
         tvContainer.backgroundColor = color
         gamesContainer.backgroundColor = color
         comicsContainer.backgroundColor = color
-    }
-
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
     }
 
 }
